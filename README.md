@@ -19,7 +19,7 @@ To try out the Snake Game on your local machine, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Shrouk-Fathy/Snake-Game.git
-Open the index.html file in your web browser to start playing the Snake Game.Preview Witness the live demonstration of Snake Game [here](https://github.com/Shrouk-Fathy/Snake-Game/).
+Open the index.html file in your web browser to start playing the Snake Game.Preview Witness the live demonstration of Snake Game [here](https://shrouk-fathy.github.io/Snake-Game/).
 ## Features
 Responsive design for seamless gameplay on various screen sizes.
 Score tracking to monitor your progress.
