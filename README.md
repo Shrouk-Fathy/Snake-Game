@@ -11,6 +11,8 @@ This project showcases a simple yet engaging Snake Game where players control a 
 - Control the snake's movement using the arrow keys on your keyboard.
 - Guide the snake to eat the food to grow longer and increase your score.
 - Avoid colliding with the walls or the snake's own body to prevent game over.
+  
+  ### You can play the Snake Game only on a laptop .
 
 ## Getting Started
 
