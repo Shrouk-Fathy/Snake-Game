@@ -12,7 +12,7 @@ This project showcases a simple yet engaging Snake Game where players control a 
 - Guide the snake to eat the food to grow longer and increase your score.
 - Avoid colliding with the walls or the snake's own body to prevent game over.
   
-  ### You can play the Snake Game only on a laptop .
+  ### You can play the Snake Game on a laptop and phone .
 
 ## Getting Started
 
