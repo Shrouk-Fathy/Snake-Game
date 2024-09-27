@@ -204,5 +204,5 @@ function gameOver() {
 
     buttonInterface.append(message);
     buttonInterface.append(button);
-    document.body.prepend(buttonInterface);
+    document.getElementById("interface").prepend(buttonInterface);
 }
