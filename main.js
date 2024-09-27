@@ -6,6 +6,9 @@ let scoreContainer = document.querySelector(".game-container h2");
 let score = 0;
 let timer;
 
+let touchStartX = 0;
+let touchStartY = 0;
+
 startButton.addEventListener("click", () => {
     const snakeSound = document.getElementById("snakeSound");
     snakeSound.currentTime = 0;
@@ -85,6 +88,40 @@ document.addEventListener("keydown", (event) => {
             break;
     }
 });
+
+document.addEventListener("touchstart", handleTouchStart, false);
+document.addEventListener("touchmove", handleTouchMove, false);
+
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+    touchStartY = event.touches[0].clientY;
+}
+
+function handleTouchMove(event) {
+    if (flag) {
+        return;
+    }
+
+    let touchEndX = event.touches[0].clientX;
+    let touchEndY = event.touches[0].clientY;
+
+    let deltaX = touchEndX - touchStartX;
+    let deltaY = touchEndY - touchStartY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        if (deltaX > 0 && direction !== 'left') {
+            direction = 'right';
+        } else if (deltaX < 0 && direction !== 'right') {
+            direction = 'left';
+        }
+    } else {
+        if (deltaY > 0 && direction !== 'up') {
+            direction = 'down';
+        } else if (deltaY < 0 && direction !== 'down') {
+            direction = 'up';
+        }
+    }
+}
 
 let flag = false;
 
